@@ -13,6 +13,7 @@ modules:
 
   - type: dnf
     install:
+      install-weak-deps: false
       packages:
         - cronie # scheduled executions
         - wget # downloading files
