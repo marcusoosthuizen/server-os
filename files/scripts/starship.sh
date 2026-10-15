@@ -5,6 +5,7 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-# Your code goes here.
-echo 'This is an example shell script'
-echo 'Scripts here will run during build if specified in recipe.yml'
+wget -O "starship-install" \
+        "https://starship.rs/install.sh"
+sh starship-install -y -b /usr/bin -p unknown-linux-gnu
+rm starship-install
