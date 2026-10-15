@@ -19,6 +19,7 @@ modules:
       packages:
         - cronie # scheduled executions
         - wget # downloading files
+        - screen # screen manager
         - ffmpeg # for video manipulation
         - vim # a sane file editor
         - ruby # running the discord bot
