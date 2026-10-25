@@ -14,6 +14,8 @@ modules:
   - type: dnf
     repos:
       nonfree: negativo17
+      files:
+        - terra.repo
     install:
       install-weak-deps: false
       packages:
@@ -22,11 +24,8 @@ modules:
         - screen # screen manager
         - ffmpeg # for video manipulation
         - vim # a sane file editor
-        - ruby # running the discord bot
-        - java-25-openjdk-headless # running minecraft server
-
-  - type: script
-    scripts:
-      - starship.sh # starship bash prompt
+        - mise # dev env manager
+        - mise-bash-completion # bash completion for mise
+        - starship # bash prompt
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
