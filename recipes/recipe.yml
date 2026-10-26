@@ -22,10 +22,7 @@ modules:
         - cronie # scheduled executions
         - wget # downloading files
         - screen # screen manager
-        - ffmpeg # for video manipulation
-        - vim # a sane file editor
         - mise # dev env manager
         - mise-bash-completion # bash completion for mise
-        - starship # bash prompt
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
